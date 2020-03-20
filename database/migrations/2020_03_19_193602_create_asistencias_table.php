@@ -19,7 +19,7 @@ class CreateAsistenciasTable extends Migration
             $table->unique(['DNI', 'fecha']);
             $table->foreign('DNI')->references('DNI')->on('colegios')->onDelete('cascade');
             $table->boolean('tipo');
-            $table->text('observación');
+            $table->text('observacion');
             $table->timestamps();
         });
     }

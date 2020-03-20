@@ -26,4 +26,9 @@ class Colegio extends Model
      * @var string
      */
     protected $keyType = 'string';
+
+    protected $fillable = [
+        'ano',
+    ];
+
 }

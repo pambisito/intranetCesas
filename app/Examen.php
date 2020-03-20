@@ -33,7 +33,7 @@ class Examen extends Model
      * @var array
      */
     protected $fillable = [
-        'puntajeSM', 'puntajeVilla', 'puntajeCallao', 
+        'fecha', 'puntajeSM', 'puntajeVilla', 'puntajeCallao', 
     ];
 
 }
