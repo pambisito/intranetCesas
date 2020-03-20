@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Iniciar sesión | Academia Cesas</title>
+        <title>Iniciar sesión | Academia Cesas SMP</title>
 
         <!-- Favicon -->
         <link type="image/x-icon" href="{{ asset('images/logo3.png') }}" rel="shortcut icon"/>
@@ -27,14 +27,15 @@
             </div>
 
             <div class="card-login">
-                <form class="login text-center" role="form" action="login.htm" method="POST" onsubmit="myButton.disabled = true; return true;">
+                <form class="login text-center" role="form" action="{{ route('login') }}" method="POST" onsubmit="myButton.disabled = true; return true;">
+                    @csrf
                     <div class="input-group">
                         <span class="input-group-addon"><span class="far fa-id-card"></span></span>
                         <input type="text" name="DNI" placeholder="DNI" required value="">
                     </div>
                     <div class="input-group">
                         <span class="input-group-addon"><span class="fas fa-unlock-alt"></span></span>
-                        <input type="password" name="clave" value="" placeholder="Contraseña" required>
+                        <input type="password" name="password" value="" placeholder="Contraseña" required>
                     </div>            
                     <div class="input-group">
                         <button type="submit" name="myButton"><span class="fa fa-sign-in-alt"></span> Iniciar sesión</button>

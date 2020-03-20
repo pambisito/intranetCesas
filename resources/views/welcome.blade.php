@@ -112,7 +112,7 @@
             </div>
         </header>
         <div class="container">
-            @yield('content ')
+            @yield('content')
         </div>
         <!-- footer -->
         <footer id="footer">

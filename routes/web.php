@@ -21,6 +21,3 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/seleccionarPersona', function () {
-    return view('auth.seleccionPersona');
-})->name('seleccionPersona');
