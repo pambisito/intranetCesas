@@ -176,7 +176,7 @@
                                             <i class="fa fa-chevron-circle-right drop-icon"></i>
                                         </a>
                                         <ul class="submenu" style="display: none;">
-                                            <li class="admin-menu-perfil"><a href="#">&nbsp;&nbsp;Academia</a></li>
+                                            <li class="admin-menu-perfil"><a href="{{ route('academia.create') }}">&nbsp;&nbsp;Academia</a></li>
                                             <li class="admin-menu-historial"><a href="#">&nbsp;&nbsp;Colegio</a></li>
                                             <li><a href="#">&nbsp;&nbsp;Profesor</a></li>
                                         </ul>
